@@ -117,10 +117,15 @@ class MenuPanel extends Component implements HasForms
                 Components\CheckboxList::make('data')
                     ->hiddenLabel()
                     ->required()
+                    ->gridDirection('row')
                     ->bulkToggleable()
                     ->searchable()
                     ->live(condition: $this->paginated)
                     ->visible($items->isNotEmpty())
+                    ->extraAttributes([
+                        'class' => 'px-1',
+                        'style' => 'max-height: 200px; overflow-y: auto;'
+                    ])
                     ->options($items),
             ]);
     }

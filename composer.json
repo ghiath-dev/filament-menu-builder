@@ -1,5 +1,7 @@
 {
     "name": "datlechin/filament-menu-builder",
+    "version": "0.6.6",
+    "type": "library",
     "description": "Create and manage menus and menu items",
     "keywords": [
         "datlechin",
